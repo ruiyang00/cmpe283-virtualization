@@ -13,6 +13,7 @@
  */
 #define IA32_VMX_PINBASED_CTLS	0x481
 
+#define IA32_VMX_PROCBASED_CTLS	0x482
 /*
  * struct caapability_info
  *
@@ -37,6 +38,34 @@ struct capability_info pinbased[5] =
 	{ 6, "Activate VMX Preemption Timer" },
 	{ 7, "Process Posted Interrupts" }
 };
+
+
+struct capability_info procbased[21] =
+{
+	{ 2, "INTERRUPT_WINDOW_EXITING" },
+	{ 3, "USE_TSC_OFFSETTING" },
+	{ 7, "HLT_EXITING" },
+	{ 9, "INVLPG_EXITING" },
+	{ 10, "MWAIT_EXITING" },
+	{ 11, "RDPMC_EXITING" },
+	{ 12, "RDTSC_EXITING" },
+	{ 15, "CR3_LOAD_EXITING" },
+	{ 16, "CR3_STORE_EXITING" },
+	{ 19, "CR8_LOAD_EXITING" },
+	{ 20, "CR8_STORE_EXITING" },
+	{ 21, "USE_TPR_SHADOW" },
+	{ 22, "NMI_WINDOW_EXITING" },
+	{ 23, "MOV_DR_EXITING" },
+	{ 24, "UNCONDITIONAL_IO_EXITING" },
+	{ 25, "USE_IO_BITMAPS" },
+	{ 27, "MONITOR_TRAP_FLAG" },
+	{ 28, "USE_MSR_BITMAPS" },
+	{ 29, "MONITOR_EXITING" },
+	{ 30, "PAUSE_EXITING" },
+	{ 31, "ACTIVATE_SECONDARY_CONTROLS" }
+};
+
+
 
 /*
  * report_capability
@@ -85,6 +114,13 @@ detect_vmx_features(void)
 	pr_info("Pinbased Controls MSR: 0x%llx\n",
 		(uint64_t)(lo | (uint64_t)hi << 32));
 	report_capability(pinbased, 5, lo, hi);
+
+	
+	/* Procbased controls */
+	rdmsr(IA32_VMX_PROCBASED_CTLS, lo, hi);
+	pr_info("Procbased Controls MSR: 0x%llx\n",
+		(uint64_t)(lo | (uint64_t)hi << 32));
+	report_capability(procbased, 21, lo, hi);
 }
 
 /*
