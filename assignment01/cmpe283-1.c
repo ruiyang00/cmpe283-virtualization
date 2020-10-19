@@ -101,7 +101,7 @@ struct capability_info procbased2[27] =
 };
 
 
-struct capability_info exit[14] =
+struct capability_info exi[14] =
 {
 	{ 2, "SAVE_DEBUG_CONTROLS"},
 	{ 9, "HOST_ADDRESS_SAPCE_SIZE"},
@@ -201,7 +201,7 @@ detect_vmx_features(void)
 	rdmsr(IA32_VMX_EXIT_CTLS, lo, hi);
 	pr_info("Exit Controls MSR: 0x%llx\n",
 		(uint64_t)(lo | (uint64_t)hi << 32));
-	report_capability(exit, 14, lo, hi);
+	report_capability(exi, 14, lo, hi);
 
 	
 	/* Entry controls */
