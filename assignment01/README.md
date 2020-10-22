@@ -1,12 +1,12 @@
 Team Member: Rui
 
-Questions:  
+Questions for assignment01:  
 1. Did assignment by myself
 2. Steps for me to finish this assignment:  
     1. Configuare a GCP vm that has the VMX enable
     2. Download the cmpe283.c file source and MakeFile files
     3. make sure to have make tool and gcc compiler on your VM
-        1. run   
+        1. run(all commands are run in terminal)   
             ```sudo apt install gcc make```
     4. There are 5 total features that we are trying to detect base on our GCP VM.
         1. Pinbased(provided by professor Mike as codebase)
@@ -15,7 +15,7 @@ Questions:
         ```make```
         1. couple .o/.ko files will be generated
     6. use insmod/rmmod tool to insert and remove module  
-        ```insmod cmpe283.ko  rmmod cmpe283.ko```
+        ```insmod/rmmod cmpe283.ko```
     7. use dmesg tool to print  
         run ```dmesg```
     8. By here we sould be able to see the message outputs for pinbased, probased, probased02, exit, entry features on terminal
