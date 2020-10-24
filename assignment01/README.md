@@ -1,6 +1,7 @@
+## Questions for assignment01:
+
 Team Member: Rui
 
-Questions for assignment01:  
 1. Did assignment by myself
 2. Steps for me to finish this assignment:  
     1. Configuare a GCP vm that has the VMX enable
@@ -19,4 +20,11 @@ Questions for assignment01:
     7. use dmesg tool to print  
         run ```dmesg```
     8. By here we sould be able to see the message outputs for pinbased, probased, probased02, exit, entry features on terminal
+    
+    
+   
+   ## Sample Outputs:
+   ![image name](pics/cmpe283-1.png)
+   ![image name](pics/cmpe283-2.png)
+   ![image name](pics/cmpe283-3.png)
           
