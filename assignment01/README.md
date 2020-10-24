@@ -21,10 +21,3 @@ Team Member: Rui
         run ```dmesg```
     8. By here we sould be able to see the message outputs for pinbased, probased, probased02, exit, entry features on terminal
     
-    
-   
-   ## Sample Outputs:
-   ![image name](pics/cmpe283-1.png)
-   ![image name](pics/cmpe283-2.png)
-   ![image name](pics/cmpe283-3.png)
-          
