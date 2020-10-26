@@ -5,7 +5,7 @@ Team Member: Rui
 1. Did assignment by myself
 2. Steps for me to finish this assignment:  
     1. Configuare a GCP vm that has the VMX enable
-    2. Download the cmpe283.c file source and MakeFile files
+    2. Download the cmpe283.c source file source and MakeFile file
     3. make sure to have make tool and gcc compiler on your VM
         1. run(all commands are run in terminal)   
             ```sudo apt install gcc make```
