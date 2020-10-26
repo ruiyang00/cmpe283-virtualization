@@ -7,3 +7,4 @@ Each assignment will include a readme file corresponding that assginment.
 
 Team memeber: Rui  
 Assignment01: Discovering VMX Features
+Assignment01: Modifying instruction behavior in KVM
