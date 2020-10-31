@@ -24,6 +24,12 @@
 #include "trace.h"
 #include "pmu.h"
 
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> 1049942168ce08908e7203e64ae0ef164ec36790
 /*
  * Unlike "struct cpuinfo_x86.x86_capability", kvm_cpu_caps doesn't need to be
  * aligned to sizeof(unsigned long) because it's not accessed via bitops.
@@ -1060,6 +1066,11 @@ bool kvm_cpuid(struct kvm_vcpu *vcpu, u32 *eax, u32 *ebx,
 	entry = kvm_find_cpuid_entry(vcpu, function, index);
 	exact = !!entry;
 
+<<<<<<< HEAD
+=======
+	printk("kvm_cpuid() got call -> function: %d", function);
+
+>>>>>>> 1049942168ce08908e7203e64ae0ef164ec36790
 	if (!entry && !exact_only) {
 		entry = get_out_of_range_cpuid_entry(vcpu, &function, index);
 		used_max_basic = !!entry;
@@ -1085,6 +1096,15 @@ bool kvm_cpuid(struct kvm_vcpu *vcpu, u32 *eax, u32 *ebx,
 		 * implemented, so we pass through CL iff leaf 1
 		 * exists. EDX can be copied from any existing index.
 		 */
+<<<<<<< HEAD
+=======
+		if( function == 0x4FFFFFFF) {
+			*eax = 100;
+			*ebx = 200;
+			return true;
+		}
+		
+>>>>>>> 1049942168ce08908e7203e64ae0ef164ec36790
 		if (function == 0xb || function == 0x1f) {
 			entry = kvm_find_cpuid_entry(vcpu, function, 1);
 			if (entry) {
