@@ -59,7 +59,7 @@ Does the number of exits increase at a stable rate?
 No, the exits has a gap between my cpuid calls. I think that before I make call to my test program, the kernel has other exits. For example, I/O to disk or Page Fault Exits.
 
 Approximately how many exits does a full vm boot entail?
-In my case
+In my case, 545,749 exits on at the 306 seconds after boot up from dmesg.
 
    
 
