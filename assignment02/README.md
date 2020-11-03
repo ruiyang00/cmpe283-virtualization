@@ -54,7 +54,7 @@ on console to enter to the nested vm console.
 ```
 ### make a user-mode program to call CUPID at x4fffffff
 
-##Q3
+## Q3
 Does the number of exits increase at a stable rate?  
 No, the exits has a gap between my cpuid calls. I think that before I make call to my test program, the kernel has other exits. For example, I/O to disk or Page Fault Exits.
 
