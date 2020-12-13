@@ -1,3 +1,6 @@
 [submodule "assignment02/linux"]
 	path = assignment02/linux
 	url = https://github.com/ruiyang00/linux.git
+[submodule "assignment03/linux"]
+	path = assignment03/linux
+	url = https://github.com/ruiyang00/linux.git
