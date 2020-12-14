@@ -63,12 +63,12 @@ External Interrrupt Exit, Interrupt Window Exit, Control-register access exits, 
 Q4: Of the exit types defined in the SDM, which are the most frequent? Least?  
 Ans: In my case, External Interrupt(1) CPUID(10), Control-register acesses(28), I/O instrcution(30), and few others are frequent. MOV DR(29), Exception(0), APIC access(44), and etc. are least. below is the output for this assgiment. 
 
-
-cpudi(0x4FFFFFFFE), exit number =0, exits=9
-cpudi(0x4FFFFFFFE), exit number =1, exits=34,266
-cpudi(0x4FFFFFFFE), exit number =7, exits=8,709
-cpudi(0x4FFFFFFFE), exit number =10, exits=139,717
-cpudi(0x4FFFFFFFE), exit number =12, exits=50,734
+```
+cpudi(0x4FFFFFFFE), exit number =0, exits=9  
+cpudi(0x4FFFFFFFE), exit number =1, exits=34,266  
+cpudi(0x4FFFFFFFE), exit number =7, exits=8,709  
+cpudi(0x4FFFFFFFE), exit number =10, exits=139,717  
+cpudi(0x4FFFFFFFE), exit number =12, exits=50,734  
 cpudi(0x4FFFFFFFE), exit number =28, exits=102,212
 cpudi(0x4FFFFFFFE), exit number =29, exits=2
 cpudi(0x4FFFFFFFE), exit number =30, exits=216,954
@@ -78,3 +78,4 @@ cpudi(0x4FFFFFFFE), exit number =44, exits=22
 cpudi(0x4FFFFFFFE), exit number =48, exits=1,095
 cpudi(0x4FFFFFFFE), exit number =49, exits=1,953
 cpudi(0x4FFFFFFFE), exit number =54, exits=9
+```
