@@ -78,4 +78,5 @@ cpudi(0x4FFFFFFFE), exit number =44, exits=22
 cpudi(0x4FFFFFFFE), exit number =48, exits=1,095
 cpudi(0x4FFFFFFFE), exit number =49, exits=1,953
 cpudi(0x4FFFFFFFE), exit number =54, exits=9
+rest of the exits are 0
 ```
