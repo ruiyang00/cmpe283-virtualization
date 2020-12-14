@@ -7,7 +7,7 @@ This readme file contains the answers to Questions
 ANS: I did this lab by myslef  
 ## Q2
 Q:Include a sample of your print of exit count output from dmesg from “with ept” and “without ept”.  
-Ans: For somehow reason, my google cloud vm will crash everytime when I insmod the /lib/modules/my_version/../kvm-intel.ko even if I have a working assignment03 and follow your instrcutions. I am not sure where I did wrong. Anyway, I am only able to provide the output for the ept.  
+Ans: For somehow reason, my google cloud vm will crash every time when I start the inner vm after I insmod the /lib/modules/my_version/../kvm-intel.ko even if I have a working assignment03 and follow your instrcutions. I am not sure where I did wrong. Anyway, I am only able to provide the output for the ept.  
 
 ![image name](pic/ept_output.png)  
 
